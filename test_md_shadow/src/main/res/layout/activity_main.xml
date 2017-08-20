@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:id="@+id/activity_main"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.itheima.test_md_shadow.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp">
+        <!--android:elevation="4dp" 海拔  控制的是阴影的大小|颜色-->
+        <TextView android:layout_width="100dp" android:layout_height="100dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:background="#fff"
+            android:elevation="4dp"
+            android:translationZ="30dp"/>
+        <TextView android:layout_width="100dp" android:layout_height="100dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:background="#fff"
+            android:elevation="20dp"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <!--android:translationZ="10dp"   z轴：可以调整控件的海拔高度-->
+        <TextView android:layout_width="100dp" android:layout_height="100dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:background="#f00"
+            android:translationZ="10dp"
+            />
+        <TextView android:layout_width="100dp" android:layout_height="100dp"
+            android:layout_marginLeft="80dp"
+            android:layout_marginRight="50dp"
+            android:background="#00f"
+            android:layout_marginTop="50dp"
+
+            />
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp">
+        <TextView android:layout_width="50dp" android:layout_height="50dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:background="@drawable/circle_shape"
+            android:elevation="10dp"
+            android:outlineProvider="none"
+           />
+        <TextView android:layout_width="50dp" android:layout_height="50dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:background="@drawable/circle_shape"
+            android:elevation="10dp"
+            android:outlineProvider="background"/>
+        <TextView android:layout_width="50dp" android:layout_height="50dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:background="@drawable/circle_shape"
+            android:elevation="10dp"
+            android:outlineProvider="bounds"/>
+    </LinearLayout>
+
+    <TextView android:layout_width="50dp" android:layout_height="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:background="@drawable/circle_shape"
+        android:elevation="10dp"
+        android:id="@+id/tvs"
+        />
+    <TextView android:layout_width="50dp" android:layout_height="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:background="#f00"
+        android:elevation="10dp"
+        android:id="@+id/cut"
+        />
+
+</LinearLayout>

@@ -1,0 +1,1 @@
+include ':android5.0', ':test_md_vector', ':test_md_theme', ':test_md_shadow', ':test_md_tint', ':test_md_palette', ':test_md_backgroud', ':test_md_custom_cricular_reveal', ':test_md_pathanimator', ':test_md_selector_animator', ':test_md_animated_selector', ':test_md_transiation', ':test-recyclerview', ':test-recyclerview-staggered'

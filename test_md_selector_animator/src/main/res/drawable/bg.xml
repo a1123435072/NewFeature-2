@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:drawable="@color/colorAccent" android:state_pressed="true">
+        <set>
+            <objectAnimator android:propertyName="translationZ"
+                android:duration="200"
+                android:valueTo="20dp"
+                android:valueType="floatType"/>
+            <objectAnimator android:propertyName="scaleX"
+                android:duration="200"
+                android:valueTo="0.5"
+                android:valueType="floatType"/>
+            <objectAnimator android:propertyName="scaleY"
+                android:duration="200"
+                android:valueTo="0.5"
+                android:valueType="floatType"/>
+        </set>
+    </item>
+    <item android:drawable="@color/colorPrimary" >
+        <set>
+            <objectAnimator android:propertyName="translationZ"
+                android:duration="200"
+                android:valueTo="0"
+                android:valueType="floatType"/>
+            <objectAnimator android:propertyName="scaleX"
+                android:duration="200"
+                android:valueTo="1"
+                android:valueType="floatType"/>
+            <objectAnimator android:propertyName="scaleY"
+                android:duration="200"
+                android:valueTo="1"
+                android:valueType="floatType"/>
+        </set>
+    </item>
+
+
+</selector>
